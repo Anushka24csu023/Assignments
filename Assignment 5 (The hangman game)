@@ -5,7 +5,8 @@
 int main(){ 
     printf("Welcome to Hangman! You have %d tries to guess the word.\n",6); 
     char word[20]="Hello";
-    word=tolower(word)
+    for (int c=0; word[c]!='\0'; c++) {
+        word[c] = tolower(word[c]);
     int word_length=strlen(word);
     char guessed_letters[20];
     char guessed_word[word_length];
