@@ -38,7 +38,7 @@ int main(){
     if(choice==1){ 
 
         printf("\nYou selected 1st choice!\n"); 
-        printf("\nEnter the element which you want to insert at the front position: \n"); 
+        printf("\nEnter the element which you want to insert at the front position: "); 
         scanf("%d", &element); 
         arr=realloc(arr,(size+1)*sizeof(int)); 
 
@@ -68,7 +68,7 @@ int main(){
         printf("\nYou selected 2nd choice!\n"); 
         printf("\nEnter the position (1 to %d) at which you want to insert a new element: ",size); 
         scanf("%d",&index); 
-        printf("\nEnter the element which you want to insert at position %d: \n",index); 
+        printf("\nEnter the element which you want to insert at position %d: ",index); 
         scanf("%d",&element); 
         arr=realloc(arr,(size+1)*sizeof(int)); 
 
